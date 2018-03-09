@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+  <package name="User" extends="struts-default" namespace="/">
+  <action name="User_to_register" class="com.henu.action.UserShowAction" method="toRegister">
+      <result name="success">jsp/register.jsp</result>
+    </action>
+    <action name="User_to_login" class="com.henu.action.UserShowAction" method="toLogin">
+      <result name="success">jsp/login.jsp</result>
+    </action>
+    <action name="User_to_code" class="com.henu.action.UserShowAction" method="toCode">
+      <result name="success">/servlet/checkCode</result>
+    </action>
+    <action name="User_register" class="com.henu.action.UserAction" method="register">
+      <result name="success">jsp/login.jsp</result>
+      <result name="fail">jsp/register.jsp</result>
+    </action>
+    <action name="User_login" class="com.henu.action.UserAction" method="login">
+      <result name="success">index.jsp</result>
+      <result name="fail">jsp/login.jsp</result>
+    </action>
+  </package>
+</struts>

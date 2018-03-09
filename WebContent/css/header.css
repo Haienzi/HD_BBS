@@ -1,0 +1,17 @@
+#henu_img{
+	height: 40px; 
+	float: left; 
+	margin: 4px 10px;
+}
+.content{
+	width:1000px; 
+	margin: 0 auto;
+	/* border: 1px solid #000; **/
+}
+
+.error_div{
+	color: red; 
+	text-align: left;
+	padding-left: 100px;
+	padding-bottom: 20px;
+}

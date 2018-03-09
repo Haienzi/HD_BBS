@@ -1,0 +1,9 @@
+#forum_content{
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.total_page{
+  line-height: 30px;
+  margin-left: 10px;
+}

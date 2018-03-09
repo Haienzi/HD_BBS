@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.henu.entity.User" table="t_user">
+    <!-- id定义表中的主键 对应持久化类的属性名称 数据类型等 -->
+    <id name="userId" column="uid">
+      <generator class="native"></generator>
+    </id>    
+    <property name="username" column="username"></property>
+    <property name="password" column="password"></property>
+    <property name="email" column="email"></property>
+    <property name="phone" column="phone"></property>
+    <property name="gender" column="gender"></property>
+    <property name="synopsis" column="synopsis"></property>
+    <property name="type" column="type"></property>
+    <property name="usericon" column="usericon"></property>
+  </class>
+</hibernate-mapping>
+  
